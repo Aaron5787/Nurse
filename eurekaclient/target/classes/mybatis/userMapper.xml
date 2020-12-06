@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.app.elenurse.domain.mapper.UserMapper">
+    <select id="queryAllUser" parameterType="int" resultType="com.app.elenurse.domain.User">
+		select
+        id,
+        user_code as userCode,
+        user_name as userName,
+        user_phone as userPhone,
+        user_password as userPassword,
+        user_status as userStatus,
+        CREATE_user as createUser,
+        CREATE_time as createTime,
+        update_user as updateUser,
+        update_time as updateTime
+         from `user`
+	</select>
+
+</mapper>
